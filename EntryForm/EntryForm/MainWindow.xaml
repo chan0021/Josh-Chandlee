@@ -1,0 +1,27 @@
+﻿<Window x:Class="EntryForm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EntryForm"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF079EBF" Offset="0"/>
+                <GradientStop Color="#FFA626E2" Offset="0.52"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="27" Margin="303,97,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="65" TextChanged="TxtName_TextChanged"/>
+        <TextBox x:Name="txtZipCode" HorizontalAlignment="Left" Height="27" Margin="303,211,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="65" TextChanged="TxtZipCode_TextChanged"/>
+        <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Height="27" Margin="303,153,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="219" TextChanged="TxtAddress_TextChanged"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Height="35" Margin="458,311,0,0" VerticalAlignment="Top" Width="99" Click="BtnSubmit_Click"/>
+        <TextBlock x:Name="tbkName" HorizontalAlignment="Left" Height="27" Margin="161,97,0,0" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top" Width="78"/>
+        <TextBlock x:Name="tbkZipCode" HorizontalAlignment="Left" Height="27" Margin="161,211,0,0" TextWrapping="Wrap" Text="Zip Code:" VerticalAlignment="Top" Width="78"/>
+        <TextBlock x:Name="tbkAddress" HorizontalAlignment="Left" Height="27" Margin="161,153,0,0" TextWrapping="Wrap" Text="Address:" VerticalAlignment="Top" Width="78"/>
+        <TextBlock x:Name="tbkEntryFormTitle" HorizontalAlignment="Left" Height="58" Margin="226,19,0,0" TextWrapping="Wrap" Text="Entry Form" VerticalAlignment="Top" Width="232" FontSize="36" TextAlignment="Center"/>
+        <ListBox x:Name="lstOutput" HorizontalAlignment="Left" Height="210" Margin="542,77,0,0" VerticalAlignment="Top" Width="240" SelectionChanged="LstOutput_SelectionChanged"/>
+
+    </Grid>
+</Window>
