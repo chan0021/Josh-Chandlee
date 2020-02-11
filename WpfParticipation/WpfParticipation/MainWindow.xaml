@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfParticipation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfParticipation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="GridMain">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="615*"/>
+            <ColumnDefinition Width="178*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnSubmit" Content="Button" HorizontalAlignment="Left" Margin="130,249,0,0" VerticalAlignment="Top" Width="129" Height="70" Click="BtnSubmit_Click"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="28" Margin="184,88,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="28" Margin="184,188,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="75"/>
+        <TextBlock HorizontalAlignment="Left" Margin="100,89,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="100,189,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="255,36,0,0" TextWrapping="Wrap" Text="Sign Up for the Mailing List" VerticalAlignment="Top" Height="52" Width="143"/>
+
+    </Grid>
+</Window>
